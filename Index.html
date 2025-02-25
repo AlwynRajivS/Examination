@@ -63,12 +63,12 @@
 
         function terminateSession() {
             sessionStorage.setItem("examExited", "true");
-            window.location.href = "https://example.com/session-expired"; // Change to your exit page
+            window.location.href = "https://kcetcoe.com/session-expired"; // Change to your exit page
         }
 
         function checkReEntry() {
             if (sessionStorage.getItem("examExited") === "true") {
-                window.location.href = "https://example.com/session-expired";
+                window.location.href = "https://kcetcoe.com/session-expired";
             }
         }
 
@@ -77,7 +77,7 @@
             sessionStorage.setItem("examExited", "true");
             setTimeout(() => {
                 document.exitFullscreen();
-                window.location.href = "https://example.com/assessment-completed";
+                window.location.href = "https://kcetcoe.com/assessment-completed";
             }, 1000);
         }
 
